@@ -1,3 +1,3 @@
-# Guide
+# Introduction
 
-## Introduction
+Enter introduction text here

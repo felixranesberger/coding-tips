@@ -27,23 +27,25 @@ In the same step we can simplify the confusing output via plus using [string int
 ```js
 const getFruitQuantity = (fruit, quantity) => `You have ${quantity} ${fruit}.`;
 
-getFruitQuantity('apples', 5);
+getFruitQuantity('bananas', 5);
 
-// Output: "You have 5 apples."
+// Output: "You have 5 bananas."
 ```
 
 ## Final step
 
-In the final step, we can apply what we learned above and use [object destructuring]() to make our function arguments clearer.
+In the final step, we can apply what we learned in previous pages and use [object destructuring](prefer-object-destructuring.md) to make our function arguments clearer.
 
-The idea is to pass an object as an argument in the function call and then break this down directly in the function.
+The idea is to pass an object as an argument in the function call and then break it down directly into small pieces.
 
 ```js
 // Destructure the object properties values and save them into new variables
 const getFruitQuantity = ({ fruit, quantity }) => `You have ${quantity} ${fruit}.`;
 
-// Input object with declarative names for values
+// Input object with values
 getFruitQuantity({ fruit: 'apples', quantity: 5 });
 
 // Output: "You have 5 apples."
 ```
+
+With this variant we now pass declarative names as function parameters. This helps us especially when debugging in the browser, since there the code editor completion of the argument names does not take effect.

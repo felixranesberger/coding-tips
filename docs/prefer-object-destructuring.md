@@ -30,11 +30,11 @@ const fruit = {
 };
 
 // Destructure the object properties values and save them into new variables 
-const { name, color, taste } = fruit;
+const { name, color } = fruit;
 
 // We can now access the values directly without writing 
 // fruit.* in front of them.
-console.log(`The ${fruit} tasted ${taste}.`);
+console.log(`The ${name} tasted ${taste}.`);
 
 // Output: "The grapefruit tasted sour."
 ```
